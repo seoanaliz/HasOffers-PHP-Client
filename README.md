@@ -1,7 +1,5 @@
 # HasOffers PHP Client
 
-[![Code Climate](https://codeclimate.com/github/DraperStudio/HasOffers-PHP-Client/badges/gpa.svg)](https://codeclimate.com/github/DraperStudio/HasOffers-PHP-Client)
-
 ## Installation
 
 ```js
