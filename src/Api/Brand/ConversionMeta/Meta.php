@@ -1,4 +1,5 @@
-<?php namespace DraperStudio\HasOffers\Api\Conversion;
+<?php
+namespace DraperStudio\HasOffers\Api\Conversion;
 
 use DraperStudio\HasOffers\Base;
 

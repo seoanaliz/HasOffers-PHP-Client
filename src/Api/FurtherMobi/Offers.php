@@ -1,4 +1,5 @@
-<?php namespace DraperStudio\HasOffers\Api\FurtherMobi;
+<?php
+namespace DraperStudio\HasOffers\Api\FurtherMobi;
 
 use DraperStudio\HasOffers\Base;
 

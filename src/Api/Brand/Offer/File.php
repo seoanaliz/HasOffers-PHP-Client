@@ -1,4 +1,5 @@
-<?php namespace DraperStudio\HasOffers\Api\Brand\Offer;
+<?php
+namespace DraperStudio\HasOffers\Api\Brand\Offer;
 
 use DraperStudio\HasOffers\Base;
 

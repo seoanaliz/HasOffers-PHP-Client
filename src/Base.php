@@ -1,4 +1,5 @@
-<?php namespace DraperStudio\HasOffers;
+<?php
+namespace DraperStudio\HasOffers;
 
 class Base
 {

@@ -1,4 +1,5 @@
-<?php namespace DraperStudio\HasOffers\Api\Affiliate\Affiliate;
+<?php
+namespace DraperStudio\HasOffers\Api\Affiliate\Affiliate;
 
 use DraperStudio\HasOffers\Base;
 
