@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class ApiKey extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'ApiKey';
     /**
      * Generates an API Key for the calling Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function generateApiKey($parameters = [])
@@ -35,8 +33,8 @@ class ApiKey extends Base
     /**
      * Returns the API Key for the caller Affiliate User, or NULL if one does not exist.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getUserApiKey($parameters = [])
@@ -47,8 +45,8 @@ class ApiKey extends Base
     /**
      * Retrieve an Affiliate User's Alerts.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function regenerateApiKey($parameters = [])

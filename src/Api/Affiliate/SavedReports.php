@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class SavedReports extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'SavedReports';
     /**
      * Delete a Saved Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function delete($parameters = [])
@@ -35,8 +33,8 @@ class SavedReports extends Base
     /**
      * Find Saved Reports.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -47,8 +45,8 @@ class SavedReports extends Base
     /**
      * Find a Saved Report by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])

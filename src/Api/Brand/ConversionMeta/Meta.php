@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Meta extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'ConversionMeta';
     /**
      * Creates Conversion Meta with data properties by data[conversion_id].
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -35,8 +33,8 @@ class Meta extends Base
     /**
      * Find Conversion Meta by Conversion ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -47,8 +45,8 @@ class Meta extends Base
     /**
      * Update Conversion Meta with data properties by data[conversion_id].
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])

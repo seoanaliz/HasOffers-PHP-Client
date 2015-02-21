@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Billing extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'AffiliateBilling';
     /**
      * Add an Affiliate Invoice Item to an Affiliate Invoice.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addInvoiceItem($parameters = [])
@@ -35,8 +33,8 @@ class Billing extends Base
     /**
      * Create an Affiliate Invoice.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createInvoice($parameters = [])
@@ -47,8 +45,8 @@ class Billing extends Base
     /**
      * Create an Affiliate Receipt.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createReceipt($parameters = [])
@@ -59,8 +57,8 @@ class Billing extends Base
     /**
      * Find Affiliate Invoices.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllInvoices($parameters = [])
@@ -71,8 +69,8 @@ class Billing extends Base
     /**
      * Find a list of Affiliate Invoices by their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllInvoicesByIds($parameters = [])
@@ -83,8 +81,8 @@ class Billing extends Base
     /**
      * Find Affiliate Receipts.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllReceipts($parameters = [])
@@ -95,8 +93,8 @@ class Billing extends Base
     /**
      * Find one or more Affiliate Receipt(s) by their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllReceiptsByIds($parameters = [])
@@ -107,8 +105,8 @@ class Billing extends Base
     /**
      * Find an Affiliate Invoice by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findInvoiceById($parameters = [])
@@ -119,8 +117,8 @@ class Billing extends Base
     /**
      * Find Affiliate Invoice stats.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findInvoiceStats($parameters = [])
@@ -131,8 +129,8 @@ class Billing extends Base
     /**
      * Find the most recent Invoice for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findLastInvoice($parameters = [])
@@ -143,8 +141,8 @@ class Billing extends Base
     /**
      * Returns an associative array with key=AffiliateReceipt and value being the most recent Receipt entered into the database for the affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findLastReceipt($parameters = [])
@@ -155,8 +153,8 @@ class Billing extends Base
     /**
      * Find an Affiliate Receipt.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findReceiptById($parameters = [])
@@ -167,8 +165,8 @@ class Billing extends Base
     /**
      * Generate Affiliate Invoices.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function generateInvoices($parameters = [])
@@ -179,8 +177,8 @@ class Billing extends Base
     /**
      * Retrieves the Account Balance for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountBalance($parameters = [])
@@ -191,8 +189,8 @@ class Billing extends Base
     /**
      * Retrieve a listing of all Affiliate Invoices and Affiliate Invoice Receipts for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountHistory($parameters = [])
@@ -203,8 +201,8 @@ class Billing extends Base
     /**
      * Retrieve the next start date for the provided Affiliate's invoices.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getNextStartDate($parameters = [])
@@ -215,8 +213,8 @@ class Billing extends Base
     /**
      * Get outstanding (unpaid, active) Affiliate Invoice amounts.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOutstandingInvoices($parameters = [])
@@ -227,8 +225,8 @@ class Billing extends Base
     /**
      * Get payout totals for an Affiliate for one or more timeframes.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getPayoutTotals($parameters = [])
@@ -239,8 +237,8 @@ class Billing extends Base
     /**
      * Deletes an Affiliate Invoice Item from an Affiliate Invoice.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeInvoiceItem($parameters = [])
@@ -251,8 +249,8 @@ class Billing extends Base
     /**
      * Update an Affiliate Invoice.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateInvoice($parameters = [])
@@ -263,8 +261,8 @@ class Billing extends Base
     /**
      * Update one field of an Affiliate Invoice.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateInvoiceField($parameters = [])
@@ -275,8 +273,8 @@ class Billing extends Base
     /**
      * Update an Affiliate Receipt.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateReceipt($parameters = [])
@@ -287,8 +285,8 @@ class Billing extends Base
     /**
      * Update one field of an Affiliate Receipt.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateReceiptField($parameters = [])
@@ -299,8 +297,8 @@ class Billing extends Base
     /**
      * Update an Affiliate's tax information.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateTaxInfo($parameters = [])

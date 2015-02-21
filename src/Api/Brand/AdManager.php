@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class AdManager extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'AdManager';
     /**
      * Add Ad Campaign Creative with data properties by Ad Campaign ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addCreative($parameters = [])
@@ -35,8 +33,8 @@ class AdManager extends Base
     /**
      * Create Ad Campaign with data properties.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createCampaign($parameters = [])
@@ -47,8 +45,8 @@ class AdManager extends Base
     /**
      * Find all Ad Campaign objects by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllCampaigns($parameters = [])
@@ -59,8 +57,8 @@ class AdManager extends Base
     /**
      * Find all Ad Campaign Creatives by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllCreatives($parameters = [])
@@ -71,8 +69,8 @@ class AdManager extends Base
     /**
      * Find Ad Campaign object by Ad Campaign ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findCampaignById($parameters = [])
@@ -83,8 +81,8 @@ class AdManager extends Base
     /**
      * Find Ad Campaign Creative by Ad Campaign Creative ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findCreativeById($parameters = [])
@@ -95,8 +93,8 @@ class AdManager extends Base
     /**
      * Get total active Ad Campaigns being currently ran by affiliate_access level.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getActiveNetworkCampaignCount($parameters = [])
@@ -107,8 +105,8 @@ class AdManager extends Base
     /**
      * Get Ad Campaign code.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCampaignCode($parameters = [])
@@ -119,8 +117,8 @@ class AdManager extends Base
     /**
      * Get Ad Campaign Creatives by Ad Campaign ID and other filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCampaignCreatives($parameters = [])
@@ -131,8 +129,8 @@ class AdManager extends Base
     /**
      * Get total media usage for start to end date for Ad Campaigns.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getUsage($parameters = [])
@@ -143,8 +141,8 @@ class AdManager extends Base
     /**
      * Set Ad Campaign Creative weights with data.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setCreativeCustomWeights($parameters = [])
@@ -155,8 +153,8 @@ class AdManager extends Base
     /**
      * Set Ad Campaign Creative weights with data properties.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setCreativeWeights($parameters = [])
@@ -167,8 +165,8 @@ class AdManager extends Base
     /**
      * Update Ad Campaign with data properties by Ad Campaign ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateCampaign($parameters = [])
@@ -179,8 +177,8 @@ class AdManager extends Base
     /**
      * Update Ad Campaign field with value by Ad Campaign ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateCampaignField($parameters = [])
@@ -191,8 +189,8 @@ class AdManager extends Base
     /**
      * Update Ad Campaign Creative by Ad Campaign Creative ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateCreative($parameters = [])
@@ -203,8 +201,8 @@ class AdManager extends Base
     /**
      * Update a given field for an ad campaign creative by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateCreativeField($parameters = [])

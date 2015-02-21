@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class DisabledLink extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'OfferDisabledLink';
     /**
      * Delete an Offer Disabled Link.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function delete($parameters = [])
@@ -35,8 +33,8 @@ class DisabledLink extends Base
     /**
      * Find Offer Disabled Links.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -47,8 +45,8 @@ class DisabledLink extends Base
     /**
      * Find one or more Offer Disabled Links their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByIds($parameters = [])
@@ -59,8 +57,8 @@ class DisabledLink extends Base
     /**
      * Find an Offer Disabled Links by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -71,8 +69,8 @@ class DisabledLink extends Base
     /**
      * Create an Offer Disabled Link.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function save($parameters = [])

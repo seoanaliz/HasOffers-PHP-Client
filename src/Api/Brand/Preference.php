@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Preference extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Preference';
     /**
      * Delete Preference by Preference name.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function delete($parameters = [])
@@ -35,8 +33,8 @@ class Preference extends Base
     /**
      * Get all Preferences.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -47,8 +45,8 @@ class Preference extends Base
     /**
      * Find a Preference by name.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findByName($parameters = [])
@@ -59,8 +57,8 @@ class Preference extends Base
     /**
      * Get Preferences for a given account type and account id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findPreferenceByNameTypeAndAccountId($parameters = [])
@@ -71,8 +69,8 @@ class Preference extends Base
     /**
      * Get a specific named preference for a given user by type and user id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findPreferenceByNameTypeAndUserId($parameters = [])
@@ -83,8 +81,8 @@ class Preference extends Base
     /**
      * Get Preferences for a given account type and account id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findPreferencesByTypeAndAccountId($parameters = [])
@@ -95,8 +93,8 @@ class Preference extends Base
     /**
      * Get Preferences for a given user type and user id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findPreferencesByTypeAndUserId($parameters = [])
@@ -107,8 +105,8 @@ class Preference extends Base
     /**
      * Get Preference value by Preference name.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getValue($parameters = [])
@@ -119,8 +117,8 @@ class Preference extends Base
     /**
      * Check if Preference is enabled by Preference name.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function isEnabled($parameters = [])
@@ -131,8 +129,8 @@ class Preference extends Base
     /**
      * Set an Account Preference.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setAccountPreference($parameters = [])
@@ -143,8 +141,8 @@ class Preference extends Base
     /**
      * Set a User Preference.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setUserPreference($parameters = [])
@@ -155,8 +153,8 @@ class Preference extends Base
     /**
      * Set Preference with value by Preference name.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setValue($parameters = [])
@@ -165,10 +163,10 @@ class Preference extends Base
     }
 
     /**
-     * Update All user preferences based on name, value, and type
+     * Update All user preferences based on name, value, and type.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateAllUserPreferences($parameters = [])
@@ -179,8 +177,8 @@ class Preference extends Base
     /**
      * Resets the Network terms and conditions agreement for all users of the specified type.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function userPreferenceUpdateTermsAndConditions($parameters = [])

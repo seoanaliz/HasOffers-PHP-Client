@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Authentication extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Authentication';
     /**
      * Find User by email, password and type.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findUserByCredentials($parameters = [])
@@ -35,8 +33,8 @@ class Authentication extends Base
     /**
      * Find User type by session token.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findUserByToken($parameters = [])

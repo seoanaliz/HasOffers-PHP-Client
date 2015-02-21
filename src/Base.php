@@ -4,35 +4,30 @@ namespace DraperStudio\HasOffers;
 class Base
 {
     /**
-     * HTTP Client
+     * HTTP Client.
      *
-     * @access private
-     * @var object $httpClient
+     * @var object
      */
     private $httpClient;
 
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType;
 
     /**
-     * API Endpoint Name(space)
+     * API Endpoint Name(space).
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName;
 
     /**
-     * Constructor
+     * Constructor.
      *
-     * @access public
-     * @param  object $httpClient
-     * @return void
+     * @param object $httpClient
      */
     public function __construct($httpClient)
     {
@@ -42,11 +37,11 @@ class Base
     }
 
     /**
-     * Send a GET request
+     * Send a GET request.
      *
-     * @access public
-     * @param  string $path
-     * @param  array  $parameters
+     * @param string $path
+     * @param array  $parameters
+     *
      * @return object
      */
     public function get($path, $parameters = [])
@@ -55,9 +50,8 @@ class Base
     }
 
     /**
-     * Get the HTTP Client
+     * Get the HTTP Client.
      *
-     * @access public
      * @return object
      */
     public function getHttpClient()
@@ -66,11 +60,9 @@ class Base
     }
 
     /**
-     * Set the HTTP Client
+     * Set the HTTP Client.
      *
-     * @access public
-     * @param  object $httpClient
-     * @return void
+     * @param object $httpClient
      */
     public function setHttpClient($httpClient)
     {
@@ -78,9 +70,8 @@ class Base
     }
 
     /**
-     * Get the API Endpoint Type
+     * Get the API Endpoint Type.
      *
-     * @access public
      * @return string
      */
     public function getEndpointType()
@@ -89,11 +80,9 @@ class Base
     }
 
     /**
-     * Set the API Endpoint Type
+     * Set the API Endpoint Type.
      *
-     * @access public
-     * @param  string $endpointType
-     * @return void
+     * @param string $endpointType
      */
     public function setEndpointType($endpointType)
     {
@@ -101,9 +90,8 @@ class Base
     }
 
     /**
-     * Get the API Endpoint Name
+     * Get the API Endpoint Name.
      *
-     * @access public
      * @return object
      */
     public function getEndpointName()
@@ -112,11 +100,9 @@ class Base
     }
 
     /**
-     * Set the API Endpoint Name
+     * Set the API Endpoint Name.
      *
-     * @access public
-     * @param  string $endpointName
-     * @return void
+     * @param string $endpointName
      */
     public function setEndpointName($endpointName)
     {

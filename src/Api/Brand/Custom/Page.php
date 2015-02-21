@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Page extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'CustomPage';
     /**
-     * Find custom pages
+     * Find custom pages.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function find($parameters = [])
@@ -33,10 +31,10 @@ class Page extends Base
     }
 
     /**
-     * Find custom page by id
+     * Find custom page by id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])

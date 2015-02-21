@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class DneList extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'DneList';
     /**
      * Add DNE Email with data to a DNE List.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addEmail($parameters = [])
@@ -35,8 +33,8 @@ class DneList extends Base
     /**
      * Create DNE List with data properties.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -47,8 +45,8 @@ class DneList extends Base
     /**
      * Find all DNE Lists by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -59,8 +57,8 @@ class DneList extends Base
     /**
      * Finds all DNE Lists by DNE List IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByIds($parameters = [])
@@ -71,8 +69,8 @@ class DneList extends Base
     /**
      * Find DNE List by DNE List ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -83,8 +81,8 @@ class DneList extends Base
     /**
      * Find DNE List by Offer ID. The offer must have \"show_mail_list\" set to 1 or this returns false.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findByOfferId($parameters = [])
@@ -95,8 +93,8 @@ class DneList extends Base
     /**
      * Get DNE Emails by DNE List ID in CSV format.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getEmailListCsv($parameters = [])
@@ -107,8 +105,8 @@ class DneList extends Base
     /**
      * Modify all Offers using one DNE List to use another DNE List.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function moveDneList($parameters = [])
@@ -119,8 +117,8 @@ class DneList extends Base
     /**
      * Update DNE List with data properties by DNE List ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -131,8 +129,8 @@ class DneList extends Base
     /**
      * Bulk upload DNE Emails by DNE List ID and _FILES.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function upload($parameters = [])

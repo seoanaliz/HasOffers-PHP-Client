@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Whitelist extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'OfferWhitelist';
     /**
      * Create an Offer Whitelist.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -35,8 +33,8 @@ class Whitelist extends Base
     /**
      * Delete one or more Offer Whitelists.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function delete($parameters = [])
@@ -47,8 +45,8 @@ class Whitelist extends Base
     /**
      * Find Offer Whitelists.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -59,8 +57,8 @@ class Whitelist extends Base
     /**
      * Find an Offer Whitelist.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -71,8 +69,8 @@ class Whitelist extends Base
     /**
      * Update an Offer Whitelist.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -83,8 +81,8 @@ class Whitelist extends Base
     /**
      * Update one field of an Offer Whitelist.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])

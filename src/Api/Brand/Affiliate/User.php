@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class User extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'AffiliateUser';
     /**
      * Check if a password matches that of an Affiliate User account.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function checkPassword($parameters = [])
@@ -35,8 +33,8 @@ class User extends Base
     /**
      * Create an Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -47,8 +45,8 @@ class User extends Base
     /**
      * Find Affiliate Users.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -59,8 +57,8 @@ class User extends Base
     /**
      * Find one or more Affiliate Users by their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByIds($parameters = [])
@@ -71,8 +69,8 @@ class User extends Base
     /**
      * Find a list of all Affiliate User IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIds($parameters = [])
@@ -83,8 +81,8 @@ class User extends Base
     /**
      * Find a list of all Affiliate User IDs in a specific Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIdsByAffiliateId($parameters = [])
@@ -95,8 +93,8 @@ class User extends Base
     /**
      * Find and Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -107,8 +105,8 @@ class User extends Base
     /**
      * Grants a permission to an Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function grantAccess($parameters = [])
@@ -119,8 +117,8 @@ class User extends Base
     /**
      * Revokes a permission from an Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeAccess($parameters = [])
@@ -131,8 +129,8 @@ class User extends Base
     /**
      * Resets an Affiliate User password to a new, randomly generated password.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function resetPassword($parameters = [])
@@ -143,8 +141,8 @@ class User extends Base
     /**
      * Check if any Affiliate Users in the Network have a specific email address.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function uniqueEmail($parameters = [])
@@ -155,8 +153,8 @@ class User extends Base
     /**
      * Update an Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -167,8 +165,8 @@ class User extends Base
     /**
      * Update one field of an Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])

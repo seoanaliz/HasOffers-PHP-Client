@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class SavedReports extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'SavedReports';
     /**
      * Create a Saved Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -35,8 +33,8 @@ class SavedReports extends Base
     /**
      * Delete a Saved Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function delete($parameters = [])
@@ -47,8 +45,8 @@ class SavedReports extends Base
     /**
      * Find any Saved Reports having a specified hash.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findByHash($parameters = [])
@@ -59,8 +57,8 @@ class SavedReports extends Base
     /**
      * Find a Saved Report by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -71,8 +69,8 @@ class SavedReports extends Base
     /**
      * Update a Saved Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])

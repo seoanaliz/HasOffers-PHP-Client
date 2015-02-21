@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Targeting extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'OfferTargeting';
     /**
      * Returns all TargetRuleOffers (with TargetRule attached) for the specified Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getRuleTargetingForOffer($parameters = [])

@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Alert extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Alert';
     /**
      * Dismiss an Affiliate User Alert by Alert ID for the calling Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function dismissAffiliateUserAlert($parameters = [])
@@ -35,8 +33,8 @@ class Alert extends Base
     /**
      * Find Alert by Alert ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -47,8 +45,8 @@ class Alert extends Base
     /**
      * Retrieve an Affiliate User's Alerts.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliateUserAlerts($parameters = [])

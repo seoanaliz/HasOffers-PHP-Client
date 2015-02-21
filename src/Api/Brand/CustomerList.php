@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class CustomerList extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'CustomerList';
     /**
      * Create a Customer Attribute on a Customer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addCustomerAttribute($parameters = [])
@@ -35,8 +33,8 @@ class CustomerList extends Base
     /**
      * Create a Customer List Attribute.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addListAttribute($parameters = [])
@@ -47,8 +45,8 @@ class CustomerList extends Base
     /**
      * Create a Customer List.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createList($parameters = [])
@@ -59,8 +57,8 @@ class CustomerList extends Base
     /**
      * Find Customers.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllCustomers($parameters = [])
@@ -71,8 +69,8 @@ class CustomerList extends Base
     /**
      * Find Customer Lists.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllLists($parameters = [])
@@ -83,8 +81,8 @@ class CustomerList extends Base
     /**
      * Find one or more Customer Lists by their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllListsByIds($parameters = [])
@@ -95,8 +93,8 @@ class CustomerList extends Base
     /**
      * Find Subscriptions.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllSubscriptions($parameters = [])
@@ -107,8 +105,8 @@ class CustomerList extends Base
     /**
      * Find a Customer by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findCustomerById($parameters = [])
@@ -119,8 +117,8 @@ class CustomerList extends Base
     /**
      * Find a Customer List by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findListById($parameters = [])
@@ -131,8 +129,8 @@ class CustomerList extends Base
     /**
      * Find a Subscription by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findSubscriptionById($parameters = [])
@@ -143,8 +141,8 @@ class CustomerList extends Base
     /**
      * Get a list of Customer List Attributes for a Customer List.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getListAttributes($parameters = [])
@@ -155,8 +153,8 @@ class CustomerList extends Base
     /**
      * Deletes a Customer Attribute.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeCustomerAttribute($parameters = [])
@@ -167,8 +165,8 @@ class CustomerList extends Base
     /**
      * Delete a Customer List Attribute.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeListAttribute($parameters = [])
@@ -179,8 +177,8 @@ class CustomerList extends Base
     /**
      * Update a Customer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateCustomer($parameters = [])
@@ -191,8 +189,8 @@ class CustomerList extends Base
     /**
      * Update a Customer Attribute.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateCustomerAttribute($parameters = [])
@@ -203,8 +201,8 @@ class CustomerList extends Base
     /**
      * Update a Customer List.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateList($parameters = [])
@@ -215,8 +213,8 @@ class CustomerList extends Base
     /**
      * Update a Customer List Attribute.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateListAttribute($parameters = [])
@@ -227,8 +225,8 @@ class CustomerList extends Base
     /**
      * Update one field of a Customer List.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateListField($parameters = [])
@@ -239,8 +237,8 @@ class CustomerList extends Base
     /**
      * Update a Subscription.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateSubscription($parameters = [])

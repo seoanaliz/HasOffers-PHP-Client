@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class RawLog extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'RawLog';
     /**
      * Get log file download link by log_type and log_filename that is valid for 8 hours.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getDownloadLink($parameters = [])
@@ -35,8 +33,8 @@ class RawLog extends Base
     /**
      * Get retention in days for each log type.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getLogExpirations($parameters = [])
@@ -47,8 +45,8 @@ class RawLog extends Base
     /**
      * List available directories by log_type.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function listDateDirs($parameters = [])
@@ -59,8 +57,8 @@ class RawLog extends Base
     /**
      * List available logs by log_type and date_dir.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function listLogs($parameters = [])

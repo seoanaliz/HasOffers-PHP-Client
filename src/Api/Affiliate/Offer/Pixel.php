@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Pixel extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'OfferPixel';
     /**
      * Create an Offer Pixel.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -35,8 +33,8 @@ class Pixel extends Base
     /**
      * Find Offer Pixels.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -47,8 +45,8 @@ class Pixel extends Base
     /**
      * Gets an array of the allowed pixel types for the given offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAllowedTypes($parameters = [])
@@ -59,8 +57,8 @@ class Pixel extends Base
     /**
      * Update Offer Pixel field with value by Offer Pixel ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])

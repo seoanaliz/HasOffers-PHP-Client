@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Targeting extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'OfferTargeting';
     /**
      * Associates a TargetRuleOffer with an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addTargetRuleToOffer($parameters = [])
@@ -35,8 +33,8 @@ class Targeting extends Base
     /**
      * Create a TargetRule.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createTargetRule($parameters = [])
@@ -48,8 +46,8 @@ class Targeting extends Base
      * Deletes the specified TargetRule and any TargetRuleOffers associated
      * with it, so long as the referenced Offers are not active.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function deleteTargetRule($parameters = [])
@@ -60,8 +58,8 @@ class Targeting extends Base
     /**
      * Returns TargetRules matching the specified criteria.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findTargetRules($parameters = [])
@@ -72,8 +70,8 @@ class Targeting extends Base
     /**
      * Returns the IDs of all active Offers with use_target_rules enabled that are using the specified TargetRule.id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getActiveOfferIdsUsingRule($parameters = [])
@@ -84,8 +82,8 @@ class Targeting extends Base
     /**
      * Returns all active offers and cashflow groups (if enabled) that reference a specific TargetRule.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getActiveUsesOfRule($parameters = [])
@@ -96,8 +94,8 @@ class Targeting extends Base
     /**
      * Returns all TargetRuleOffers (with TargetRule attached) for the specified Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getRuleTargetingForOffer($parameters = [])
@@ -108,8 +106,8 @@ class Targeting extends Base
     /**
      * Deletes a TargetRuleOffer, i.e. removes a TargetRule from an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeTargetRuleFromOffer($parameters = [])
@@ -120,8 +118,8 @@ class Targeting extends Base
     /**
      * Updates the properties of a TargetRule.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateTargetRule($parameters = [])
@@ -132,8 +130,8 @@ class Targeting extends Base
     /**
      * Updates the action for a TargetRuleOffer (toggle between allow and deny).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateTargetRuleOfferAction($parameters = [])

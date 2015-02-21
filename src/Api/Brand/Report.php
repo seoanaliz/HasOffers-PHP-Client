@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Report extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Report';
     /**
      * Gets a distinct list of all currencies for which there are stats.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getActiveCurrencies($parameters = [])
@@ -35,8 +33,8 @@ class Report extends Base
     /**
      * Get Affiliate Commissions Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliateCommissions($parameters = [])
@@ -47,8 +45,8 @@ class Report extends Base
     /**
      * Get Conversions Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getConversions($parameters = [])
@@ -59,8 +57,8 @@ class Report extends Base
     /**
      * Get Affiliate Manager Commission Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getManagerCommissions($parameters = [])
@@ -71,8 +69,8 @@ class Report extends Base
     /**
      * Get Mod Summary Logs Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getModSummaryLogs($parameters = [])
@@ -83,8 +81,8 @@ class Report extends Base
     /**
      * Get Traffic Referrals Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getReferrals($parameters = [])
@@ -95,8 +93,8 @@ class Report extends Base
     /**
      * Get Stats Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getStats($parameters = [])
@@ -107,8 +105,8 @@ class Report extends Base
     /**
      * Get Subscription Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getSubscriptions($parameters = [])

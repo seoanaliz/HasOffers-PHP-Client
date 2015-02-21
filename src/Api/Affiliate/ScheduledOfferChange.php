@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class ScheduledOfferChange extends Base
 {
     /**
-     * Description
+     * Description.
      *
-     * @access protected
-     * @var object $endpoinType
+     * @var object
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'ScheduledOfferChange';
     /**
      * Find Scheduled Offer Changes.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findSchedules($parameters = [])

@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Environment extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Environment';
     /**
      * Find all Environment values.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -35,8 +33,8 @@ class Environment extends Base
     /**
      * Find Environment value by name.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findByName($parameters = [])
@@ -47,8 +45,8 @@ class Environment extends Base
     /**
      * Get Environment value by name.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getValue($parameters = [])
@@ -59,8 +57,8 @@ class Environment extends Base
     /**
      * Is Environment name enabled (aka., 0 or 1. 1 being enabled).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function isEnabled($parameters = [])
@@ -71,8 +69,8 @@ class Environment extends Base
     /**
      * Set Environment value by name and value.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setValue($parameters = [])

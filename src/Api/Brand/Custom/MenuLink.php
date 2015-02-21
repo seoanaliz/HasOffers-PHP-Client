@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class MenuLink extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'CustomMenuLink';
     /**
      * Find all custom menu links.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function find($parameters = [])
@@ -35,8 +33,8 @@ class MenuLink extends Base
     /**
      * Finds all active menu links.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findActive($parameters = [])

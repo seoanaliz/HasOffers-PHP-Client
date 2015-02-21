@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class AdManager extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'AdManager';
     /**
      * Adds a new Ad Campaign Creative to a specified Ad Campaign belonging to the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addCreative($parameters = [])
@@ -35,8 +33,8 @@ class AdManager extends Base
     /**
      * Creates a new Ad Campaign for the Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createCampaign($parameters = [])
@@ -47,8 +45,8 @@ class AdManager extends Base
     /**
      * Find all Ad Campaign objects by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllCampaigns($parameters = [])
@@ -59,8 +57,8 @@ class AdManager extends Base
     /**
      * Find all Ad Campaign Creatives by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllCreatives($parameters = [])
@@ -71,8 +69,8 @@ class AdManager extends Base
     /**
      * Find an Ad Campaign by ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findCampaignById($parameters = [])
@@ -83,8 +81,8 @@ class AdManager extends Base
     /**
      * Get Ad Campaign code.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCampaignCode($parameters = [])
@@ -95,8 +93,8 @@ class AdManager extends Base
     /**
      * Get Ad Campaign Creatives by Ad Campaign ID and other filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCampaignCreatives($parameters = [])
@@ -107,8 +105,8 @@ class AdManager extends Base
     /**
      * Update Ad Campaign with data properties by Ad Campaign ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateCampaign($parameters = [])
@@ -119,8 +117,8 @@ class AdManager extends Base
     /**
      * Update a given field for an Ad Campaign Creative.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateCreativeField($parameters = [])

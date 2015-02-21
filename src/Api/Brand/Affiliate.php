@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Affiliate extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Affiliate';
     /**
      * Add an AccountNote for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addAccountNote($parameters = [])
@@ -35,8 +33,8 @@ class Affiliate extends Base
     /**
      * Adjust affiliate clicks.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function adjustAffiliateClicks($parameters = [])
@@ -47,8 +45,8 @@ class Affiliate extends Base
     /**
      * Block an Affiliate. Sets Affiliate status to 'blocked'.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function block($parameters = [])
@@ -59,8 +57,8 @@ class Affiliate extends Base
     /**
      * Create an Affiliate account.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -71,8 +69,8 @@ class Affiliate extends Base
     /**
      * Create an Affiliate Signup Question.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createSignupQuestion($parameters = [])
@@ -83,8 +81,8 @@ class Affiliate extends Base
     /**
      * Create an Affiliate Signup Answer for an existing Signup Question.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createSignupQuestionAnswer($parameters = [])
@@ -95,8 +93,8 @@ class Affiliate extends Base
     /**
      * Disables an Affiliate Fraud Alert.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function disableFraudAlert($parameters = [])
@@ -107,8 +105,8 @@ class Affiliate extends Base
     /**
      * Enables an Affiliate Fraud Alert.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function enableFraudAlert($parameters = [])
@@ -119,8 +117,8 @@ class Affiliate extends Base
     /**
      * Find Affiliates.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -131,8 +129,8 @@ class Affiliate extends Base
     /**
      * Find one or more Affiliates by their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByIds($parameters = [])
@@ -143,8 +141,8 @@ class Affiliate extends Base
     /**
      * Find Affiliate Fraud Alerts.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllFraudAlerts($parameters = [])
@@ -155,8 +153,8 @@ class Affiliate extends Base
     /**
      * Find a list of Affiliates IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIds($parameters = [])
@@ -167,8 +165,8 @@ class Affiliate extends Base
     /**
      * Find all Affiliate IDs reporting to a specific Account Manager.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIdsByAccountManagerId($parameters = [])
@@ -179,8 +177,8 @@ class Affiliate extends Base
     /**
      * Find all Affiliates IDs who have a status of pending or lack an Account Manager.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllPendingUnassignedAffiliateIds($parameters = [])
@@ -191,8 +189,8 @@ class Affiliate extends Base
     /**
      * Find all Affiliates who have a status of pending or lack an Account Manager.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllPendingUnassignedAffiliates($parameters = [])
@@ -203,8 +201,8 @@ class Affiliate extends Base
     /**
      * Retrieve an Affiliate by ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -215,8 +213,8 @@ class Affiliate extends Base
     /**
      * Find list of affiliates matching filter.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findList($parameters = [])
@@ -227,8 +225,8 @@ class Affiliate extends Base
     /**
      * Retrieve the Account Manager (employee) for a specific Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountManager($parameters = [])
@@ -239,8 +237,8 @@ class Affiliate extends Base
     /**
      * Retrieve all AccountNotes for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountNotes($parameters = [])
@@ -251,8 +249,8 @@ class Affiliate extends Base
     /**
      * Retrieve the Affiliate Tier that an Affiliate belongs to.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliateTier($parameters = [])
@@ -263,8 +261,8 @@ class Affiliate extends Base
     /**
      * Returns a list of all Offer IDs that a specific Affiliate is allowed to run.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getApprovedOfferIds($parameters = [])
@@ -275,8 +273,8 @@ class Affiliate extends Base
     /**
      * Get a list of Offer IDs for which the specified Affiliate account has been blocked at the Offer-level or by the Advertiser.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getBlockedOfferIds($parameters = [])
@@ -287,8 +285,8 @@ class Affiliate extends Base
     /**
      * Get a list of the reason(s) why an Affiliate was blocked.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getBlockedReasons($parameters = [])
@@ -299,8 +297,8 @@ class Affiliate extends Base
     /**
      * Gets the original/creator Affiliate User for an Affiliate account.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCreatorUser($parameters = [])
@@ -311,8 +309,8 @@ class Affiliate extends Base
     /**
      * Get any Offer Conversion Caps for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferConversionCaps($parameters = [])
@@ -323,8 +321,8 @@ class Affiliate extends Base
     /**
      * Get a list of AffiliateOffers for an Affiliate, accompanied by the Hostname for each.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferHostnames($parameters = [])
@@ -335,8 +333,8 @@ class Affiliate extends Base
     /**
      * Gets any Offer Payouts defined for a specific Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferPayouts($parameters = [])
@@ -347,8 +345,8 @@ class Affiliate extends Base
     /**
      * Get all Affiliate-specific Offer Payouts.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferPayoutsAll($parameters = [])
@@ -359,8 +357,8 @@ class Affiliate extends Base
     /**
      * Get Offer Pixels for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferPixels($parameters = [])
@@ -371,8 +369,8 @@ class Affiliate extends Base
     /**
      * Get the first (lowest numeric) Affiliate ID in the Network.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOwnersAffiliateAccountId($parameters = [])
@@ -383,8 +381,8 @@ class Affiliate extends Base
     /**
      * Retrieve the PaymentMethods defined for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getPaymentMethods($parameters = [])
@@ -395,8 +393,8 @@ class Affiliate extends Base
     /**
      * Get a list of all Affiliate IDs whose accounts were referred by a specific Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getReferralAffiliateIds($parameters = [])
@@ -407,8 +405,8 @@ class Affiliate extends Base
     /**
      * Get the Affiliate Referral Commissions earned for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getReferralCommission($parameters = [])
@@ -419,8 +417,8 @@ class Affiliate extends Base
     /**
      * Get the ID of the Affiliate who referred a specific Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getReferringAffiliate($parameters = [])
@@ -431,8 +429,8 @@ class Affiliate extends Base
     /**
      * Get the Affiliate Signup Answers provided by a specific Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getSignupAnswers($parameters = [])
@@ -443,8 +441,8 @@ class Affiliate extends Base
     /**
      * Get all Affiliate Signup Questions, optionally limiting the results to those having a specific status.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getSignupQuestions($parameters = [])
@@ -455,8 +453,8 @@ class Affiliate extends Base
     /**
      * Get a list of Offer IDs that either are private or require manual approval, for which the specified Affiliate has not been granted access.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getUnapprovedOfferIds($parameters = [])
@@ -467,8 +465,8 @@ class Affiliate extends Base
     /**
      * Get a list of all Offer IDs for which the specified Affiliate has not been blocked at the Offer-level.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getUnblockedOfferIds($parameters = [])
@@ -479,8 +477,8 @@ class Affiliate extends Base
     /**
      * Delete a custom Affiliate Referral Commission rate/amount setting for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeCustomReferralCommission($parameters = [])
@@ -491,8 +489,8 @@ class Affiliate extends Base
     /**
      * Set the custom Affiliate Referral Commission amounts/rates for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setCustomReferralCommission($parameters = [])
@@ -503,8 +501,8 @@ class Affiliate extends Base
     /**
      * Sign up for an Affiliate by executing the following steps: - Validate affiliate account attribute.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function signup($parameters = [])
@@ -515,8 +513,8 @@ class Affiliate extends Base
     /**
      * Paginated search against the affiliates table directly with no contains, virtual properties attached to the response, etc.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function simpleSearch($parameters = [])
@@ -527,8 +525,8 @@ class Affiliate extends Base
     /**
      * Update an Affiliate account.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -539,8 +537,8 @@ class Affiliate extends Base
     /**
      * Update the text of an AccountNote.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateAccountNote($parameters = [])
@@ -551,8 +549,8 @@ class Affiliate extends Base
     /**
      * Update an Affiliate account by its referral ID (rather than Affiliate ID).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateByRefId($parameters = [])
@@ -563,8 +561,8 @@ class Affiliate extends Base
     /**
      * Updated one field of an Affiliate account.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])
@@ -575,8 +573,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'check' for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodCheck($parameters = [])
@@ -587,8 +585,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'direct deposit' for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodDirectDeposit($parameters = [])
@@ -599,8 +597,8 @@ class Affiliate extends Base
     /**
      * Update 'other' payment method for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodOther($parameters = [])
@@ -611,8 +609,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'payoneer' for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodPayoneer($parameters = [])
@@ -623,8 +621,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'paypal' for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodPaypal($parameters = [])
@@ -635,8 +633,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'pay quicker' for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodPayQuicker($parameters = [])
@@ -647,8 +645,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'wire' for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodWire($parameters = [])
@@ -659,8 +657,8 @@ class Affiliate extends Base
     /**
      * Update an Affiliate Signup Question.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateSignupQuestion($parameters = [])
@@ -671,8 +669,8 @@ class Affiliate extends Base
     /**
      * Update an Affiliate Signup Answer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateSignupQuestionAnswer($parameters = [])

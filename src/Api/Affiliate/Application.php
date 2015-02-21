@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Application extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Application';
     /**
      * Retrieves a list of all countries.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllCountries($parameters = [])
@@ -35,8 +33,8 @@ class Application extends Base
     /**
      * Find all jump hostnames (tracking domains) by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllHostnames($parameters = [])
@@ -47,8 +45,8 @@ class Application extends Base
     /**
      * Find all Offer Categories by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllOfferCategories($parameters = [])
@@ -59,8 +57,8 @@ class Application extends Base
     /**
      * Find all Timezones.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllTimezones($parameters = [])

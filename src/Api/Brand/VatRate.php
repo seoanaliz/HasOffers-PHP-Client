@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class VatRate extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'VatRate';
     /**
      * Create Vat Rate with data properties.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -35,8 +33,8 @@ class VatRate extends Base
     /**
      * Delete Vat Rate by Vat Rate ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function delete($parameters = [])
@@ -47,8 +45,8 @@ class VatRate extends Base
     /**
      * Find all Vat Rates by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -59,8 +57,8 @@ class VatRate extends Base
     /**
      * Find Vat Rate by Vat Rate ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -71,8 +69,8 @@ class VatRate extends Base
     /**
      * Update Vat Rate with data properties by Vat Rate ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -83,8 +81,8 @@ class VatRate extends Base
     /**
      * Update Vat Rate field with value by Vat Rate ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])

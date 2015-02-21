@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Alert extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Alert';
     /**
      * Create an Alert.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -35,8 +33,8 @@ class Alert extends Base
     /**
      * Sends an existing Alert to an Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createAffiliateUserAlert($parameters = [])
@@ -47,8 +45,8 @@ class Alert extends Base
     /**
      * Sends an existing Alert to an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createEmployeeAlert($parameters = [])
@@ -59,8 +57,8 @@ class Alert extends Base
     /**
      * Dismiss an Alert that was sent to an Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function dismissAffiliateUserAlert($parameters = [])
@@ -71,8 +69,8 @@ class Alert extends Base
     /**
      * Dismiss all Alerts that were sent to an Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function dismissAllAffiliateUserAlerts($parameters = [])
@@ -83,8 +81,8 @@ class Alert extends Base
     /**
      * Dismiss all Alerts that were sent to an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function dismissAllEmployeeAlerts($parameters = [])
@@ -95,8 +93,8 @@ class Alert extends Base
     /**
      * Dismiss an Alert that was sent to an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function dismissEmployeeAlert($parameters = [])
@@ -107,8 +105,8 @@ class Alert extends Base
     /**
      * Find Alerts.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -119,8 +117,8 @@ class Alert extends Base
     /**
      * Find one or more Alerts by their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByIds($parameters = [])
@@ -131,8 +129,8 @@ class Alert extends Base
     /**
      * Find an Alert its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -143,8 +141,8 @@ class Alert extends Base
     /**
      * Retrieve a list of Alerts assigned to an Affiliate User.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliateUserAlerts($parameters = [])
@@ -155,8 +153,8 @@ class Alert extends Base
     /**
      * Retrieve a list of Alerts assigned to an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getEmployeeAlerts($parameters = [])
@@ -167,8 +165,8 @@ class Alert extends Base
     /**
      * Send an existing Alert to a group of Affiliate Users.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function sendToAffiliateUsers($parameters = [])
@@ -179,8 +177,8 @@ class Alert extends Base
     /**
      * Send an existing Alert to a group of Employees.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function sendToEmployees($parameters = [])
@@ -191,8 +189,8 @@ class Alert extends Base
     /**
      * Update the properties of an existing Alert.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -203,8 +201,8 @@ class Alert extends Base
     /**
      * Update a property of an existing Alert.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])

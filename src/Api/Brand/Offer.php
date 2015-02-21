@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Offer extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Offer';
     /**
      * Creates an Offer Signup Question.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addApprovalQuestion($parameters = [])
@@ -35,8 +33,8 @@ class Offer extends Base
     /**
      * Adds an Offer to an Offer Category (in addition to any existing ones).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addCategory($parameters = [])
@@ -47,8 +45,8 @@ class Offer extends Base
     /**
      * Adds an Offer to an Offer Group (in addition to any existing groups the offer is in).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addGroup($parameters = [])
@@ -59,8 +57,8 @@ class Offer extends Base
     /**
      * Adds a single Browser to the existing list of targeted Browsers for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addTargetBrowser($parameters = [])
@@ -71,8 +69,8 @@ class Offer extends Base
     /**
      * Add a Country and optionally one or more regions within that country to the geo-targeting list for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addTargetCountry($parameters = [])
@@ -83,8 +81,8 @@ class Offer extends Base
     /**
      * Add a Country or optionally a single region regions within a country to the geo-targeting list for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addTargetCountryRegion($parameters = [])
@@ -95,8 +93,8 @@ class Offer extends Base
     /**
      * Block an Affiliate from an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function blockAffiliate($parameters = [])
@@ -107,8 +105,8 @@ class Offer extends Base
     /**
      * Create an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -119,8 +117,8 @@ class Offer extends Base
     /**
      * Find Offers.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -131,8 +129,8 @@ class Offer extends Base
     /**
      * Find one or more Offer(s) by their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByIds($parameters = [])
@@ -143,8 +141,8 @@ class Offer extends Base
     /**
      * Find all featured Offer IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllFeaturedOfferIds($parameters = [])
@@ -155,8 +153,8 @@ class Offer extends Base
     /**
      * Find all Offer IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIds($parameters = [])
@@ -167,8 +165,8 @@ class Offer extends Base
     /**
      * Find all Offer IDs for a specific Advertiser.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIdsByAdvertiserId($parameters = [])
@@ -179,8 +177,8 @@ class Offer extends Base
     /**
      * Find all Offer IDs that a specific Affiliate has access to.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIdsByAffiliateId($parameters = [])
@@ -191,8 +189,8 @@ class Offer extends Base
     /**
      * Find Affiliate Offer Approvals by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllPendingAffiliateApprovals($parameters = [])
@@ -203,8 +201,8 @@ class Offer extends Base
     /**
      * Find an Offer by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -215,8 +213,8 @@ class Offer extends Base
     /**
      * Generates an Offer Tracking Link.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function generateTrackingLink($parameters = [])
@@ -227,8 +225,8 @@ class Offer extends Base
     /**
      * Generates an Offer Tracking Pixel.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function generateTrackingPixel($parameters = [])
@@ -239,8 +237,8 @@ class Offer extends Base
     /**
      * Get the notes from an Affiliate Offer approval record.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliateApplicationNote($parameters = [])
@@ -251,8 +249,8 @@ class Offer extends Base
     /**
      * Get an Affiliate's approval status for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliateApprovalStatus($parameters = [])
@@ -263,8 +261,8 @@ class Offer extends Base
     /**
      * Gets Affiliate-specific Hostnames for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliateHostnames($parameters = [])
@@ -275,8 +273,8 @@ class Offer extends Base
     /**
      * Gets a summary of payout and revenue-related details for an Affiliate/Offer/Goal(optional) combination.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliatePayment($parameters = [])
@@ -287,8 +285,8 @@ class Offer extends Base
     /**
      * Get an Affiliate-specific Offer Payout for a specific Offer/Affiliate/Goal(optional) combination.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliatePayout($parameters = [])
@@ -299,8 +297,8 @@ class Offer extends Base
     /**
      * Get an Affiliate-specific Offer Revenue for a specific Offer/Affiliate/Goal(optional) combination.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliateRevenue($parameters = [])
@@ -311,8 +309,8 @@ class Offer extends Base
     /**
      * Get a list of all answers an Affiliate provided for an Offer's signup/approval questions.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getApprovalAnswers($parameters = [])
@@ -323,8 +321,8 @@ class Offer extends Base
     /**
      * Get Offer Approval/Signup Questions for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getApprovalQuestions($parameters = [])
@@ -335,8 +333,8 @@ class Offer extends Base
     /**
      * Gets a list of Affiliate IDs that are approved for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getApprovedAffiliateIds($parameters = [])
@@ -347,8 +345,8 @@ class Offer extends Base
     /**
      * Gets a list of Affiliate IDs that are blocked from an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getBlockedAffiliateIds($parameters = [])
@@ -359,8 +357,8 @@ class Offer extends Base
     /**
      * Get a list of Offer Categories that an Offer is in.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCategories($parameters = [])
@@ -371,8 +369,8 @@ class Offer extends Base
     /**
      * Get Offer Conversion Caps for a specific Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getConversionCaps($parameters = [])
@@ -383,8 +381,8 @@ class Offer extends Base
     /**
      * Find Customer Lists for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCustomerList($parameters = [])
@@ -395,8 +393,8 @@ class Offer extends Base
     /**
      * Get a list of Offer Groups than an Offer is in.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getGroups($parameters = [])
@@ -407,8 +405,8 @@ class Offer extends Base
     /**
      * Find Offer Files for a specific Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferFiles($parameters = [])
@@ -419,8 +417,8 @@ class Offer extends Base
     /**
      * Gets all Offer Files with Creative Codes.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferFilesWithCreativeCode($parameters = [])
@@ -431,8 +429,8 @@ class Offer extends Base
     /**
      * Gets a list of Offers that are in a specific Offer Group.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferListByGroupId($parameters = [])
@@ -443,8 +441,8 @@ class Offer extends Base
     /**
      * Find Offer URLs for a specific Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferUrls($parameters = [])
@@ -455,8 +453,8 @@ class Offer extends Base
     /**
      * Gets an overview containing various Offer-related counts.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOverview($parameters = [])
@@ -467,8 +465,8 @@ class Offer extends Base
     /**
      * Get Affiliate-specific Offer Payouts for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getPayouts($parameters = [])
@@ -479,8 +477,8 @@ class Offer extends Base
     /**
      * Get a list of Offer Pixels for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getPixels($parameters = [])
@@ -491,8 +489,8 @@ class Offer extends Base
     /**
      * Get Affiliate-specific Offer Revenues for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getRevenues($parameters = [])
@@ -503,8 +501,8 @@ class Offer extends Base
     /**
      * Get the Browsers targeted by an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getTargetBrowsers($parameters = [])
@@ -515,8 +513,8 @@ class Offer extends Base
     /**
      * Get the list of the Countries and Regions geo-targeted by the specified Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getTargetCountries($parameters = [])
@@ -527,8 +525,8 @@ class Offer extends Base
     /**
      * Get the thumbnail (i.e. Offer File having type of "offer thumbnail") for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getThumbnail($parameters = [])
@@ -539,8 +537,8 @@ class Offer extends Base
     /**
      * Returns the Affiliate Tier Payouts and their associated Affiliate Tier for the specified Offer ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getTierPayouts($parameters = [])
@@ -551,8 +549,8 @@ class Offer extends Base
     /**
      * Returns the Affiliate Tier Revenues and their associated Affiliate Tier for the specified Offer ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getTierRevenues($parameters = [])
@@ -563,8 +561,8 @@ class Offer extends Base
     /**
      * Gets a list of Affiliates who are unapproved for an Offer, but have not been blocked from it.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getUnapprovedAffiliateIds($parameters = [])
@@ -575,8 +573,8 @@ class Offer extends Base
     /**
      * Removes an Offer from an Offer Category.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeCategory($parameters = [])
@@ -587,8 +585,8 @@ class Offer extends Base
     /**
      * Deletes an Affiliate-specific Offer Conversion Cap.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeConversionCap($parameters = [])
@@ -599,8 +597,8 @@ class Offer extends Base
     /**
      * Removes an Offer from an Offer Group.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeGroup($parameters = [])
@@ -611,8 +609,8 @@ class Offer extends Base
     /**
      * Deletes an Affiliate-specific Offer Payout.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removePayout($parameters = [])
@@ -623,8 +621,8 @@ class Offer extends Base
     /**
      * Deletes an Affiliate-specific Offer Revenue.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeRevenue($parameters = [])
@@ -635,8 +633,8 @@ class Offer extends Base
     /**
      * Removes a single Browser from the list of Browsers targeted by an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeTargetBrowser($parameters = [])
@@ -647,8 +645,8 @@ class Offer extends Base
     /**
      * Removes the specified Country (and any Regions targeted within) from the Offer's geo-targeting list.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeTargetCountry($parameters = [])
@@ -659,8 +657,8 @@ class Offer extends Base
     /**
      * Remove a country or optionally a single region with a country from the geo-targeting list for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeTargetCountryRegion($parameters = [])
@@ -671,8 +669,8 @@ class Offer extends Base
     /**
      * Delete an Affiliate Tier Payout.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeTierPayout($parameters = [])
@@ -683,8 +681,8 @@ class Offer extends Base
     /**
      * Delete an Affiliate Tier Revenue.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeTierRevenue($parameters = [])
@@ -695,8 +693,8 @@ class Offer extends Base
     /**
      * Create an Affiliate's answer to an Offer's signup/approval question.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function saveApprovalQuestionAnswer($parameters = [])
@@ -707,8 +705,8 @@ class Offer extends Base
     /**
      * Sets the Offer approval status for an Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setAffiliateApproval($parameters = [])
@@ -719,8 +717,8 @@ class Offer extends Base
     /**
      * Sets an Affiliate-specific Hostname to use for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setAffiliateHostname($parameters = [])
@@ -731,8 +729,8 @@ class Offer extends Base
     /**
      * Sets the date an Affiliate agreed to an Offer's terms and conditions.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setAffiliateTermsDate($parameters = [])
@@ -743,8 +741,8 @@ class Offer extends Base
     /**
      * Replaces any existing Offer Categories with a new set for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setCategories($parameters = [])
@@ -755,8 +753,8 @@ class Offer extends Base
     /**
      * Set Offer Conversion Cap.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setConversionCap($parameters = [])
@@ -767,8 +765,8 @@ class Offer extends Base
     /**
      * Replace the list of Offer Groups that an Offer is in.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setGroups($parameters = [])
@@ -779,8 +777,8 @@ class Offer extends Base
     /**
      * Bulk set multiple Affiliate Offer approval statuses for private offers or those which require approval.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setMultipleAffiliateApprovals($parameters = [])
@@ -791,8 +789,8 @@ class Offer extends Base
     /**
      * Sets an Affiliate-specific Offer Payout.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setPayout($parameters = [])
@@ -803,8 +801,8 @@ class Offer extends Base
     /**
      * Sets an Affiliate-specific Offer Revenue.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setRevenue($parameters = [])
@@ -815,8 +813,8 @@ class Offer extends Base
     /**
      * Replaces the Browsers targeted by an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setTargetBrowsers($parameters = [])
@@ -827,8 +825,8 @@ class Offer extends Base
     /**
      * Set a list of Countries and/or Regions that an Offer should use for geo-targeting.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setTargetCountries($parameters = [])
@@ -839,8 +837,8 @@ class Offer extends Base
     /**
      * Sets Affiliate Tier Payout for a specific Affiliate Tier/Offer/Goal(optional) combination.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setTierPayout($parameters = [])
@@ -851,8 +849,8 @@ class Offer extends Base
     /**
      * Sets Affiliate Tier Revenue for a specific Affiliate Tier/Offer/Goal(optional) combination.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setTierRevenue($parameters = [])
@@ -863,8 +861,8 @@ class Offer extends Base
     /**
      * Unblocks an Affiliate from an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function unblockAffiliate($parameters = [])
@@ -875,8 +873,8 @@ class Offer extends Base
     /**
      * Update an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -887,8 +885,8 @@ class Offer extends Base
     /**
      * Update a Signup Question.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateApprovalQuestion($parameters = [])
@@ -899,8 +897,8 @@ class Offer extends Base
     /**
      * Update an Offer identified by Referral ID ("ref_id" field of the Offer).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateByRefId($parameters = [])
@@ -911,8 +909,8 @@ class Offer extends Base
     /**
      * Update one field of an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])

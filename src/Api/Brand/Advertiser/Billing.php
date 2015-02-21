@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Billing extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'AdvertiserBilling';
     /**
      * Create an Advertiser Invoice Item for an existing Advertiser Invoice.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addInvoiceItem($parameters = [])
@@ -35,8 +33,8 @@ class Billing extends Base
     /**
      * Create an Advertiser Invoice.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createInvoice($parameters = [])
@@ -47,8 +45,8 @@ class Billing extends Base
     /**
      * Find Advertiser Billing Invoices.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllInvoices($parameters = [])
@@ -57,10 +55,10 @@ class Billing extends Base
     }
 
     /**
-     * Find one or more Advertiser Invoices by their IDs
+     * Find one or more Advertiser Invoices by their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllInvoicesByIds($parameters = [])
@@ -71,8 +69,8 @@ class Billing extends Base
     /**
      * Retrieve an Advertiser Invoice.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findInvoiceById($parameters = [])
@@ -83,8 +81,8 @@ class Billing extends Base
     /**
      * Find Advertiser Invoice stats for an Advertiser ID for a specific date range and currency.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findInvoiceStats($parameters = [])
@@ -95,8 +93,8 @@ class Billing extends Base
     /**
      * Get the next Advertiser Invoice start date for a specific Advertiser and Currency.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getNextStartDate($parameters = [])
@@ -107,8 +105,8 @@ class Billing extends Base
     /**
      * Delete Advertiser Invoice Item.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeInvoiceItem($parameters = [])
@@ -119,8 +117,8 @@ class Billing extends Base
     /**
      * Update an Advertiser Invoice.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateInvoice($parameters = [])
@@ -131,8 +129,8 @@ class Billing extends Base
     /**
      * Update one field of an Advertiser Invoice.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateInvoiceField($parameters = [])
@@ -143,8 +141,8 @@ class Billing extends Base
     /**
      * Update tax information data by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateTaxInfo($parameters = [])

@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class ApiKey extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'ApiKey';
     /**
      * Finds all API V3 Keys matching the [optional] filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findApiKeys($parameters = [])
@@ -35,8 +33,8 @@ class ApiKey extends Base
     /**
      * Generates an API V3 Key for the specified account user.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function generateApiKey($parameters = [])
@@ -47,8 +45,8 @@ class ApiKey extends Base
     /**
      * Returns the API V3 Key for the specified user, or NULL if the specified user does not have one.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getUserApiKey($parameters = [])
@@ -59,8 +57,8 @@ class ApiKey extends Base
     /**
      * Replaces an active API V3 Key for the specified account with a new one.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function regenerateApiKey($parameters = [])
@@ -69,10 +67,10 @@ class ApiKey extends Base
     }
 
     /**
-     * Updates the status of an existing Static API Key
+     * Updates the status of an existing Static API Key.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateApiKeyStatus($parameters = [])

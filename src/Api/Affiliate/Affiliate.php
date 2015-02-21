@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Affiliate extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Affiliate';
     /**
      * Retrieves the Affiliate details for the caller.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -35,8 +33,8 @@ class Affiliate extends Base
     /**
      * Get account balance for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountBalance($parameters = [])
@@ -47,8 +45,8 @@ class Affiliate extends Base
     /**
      * Get the Account Manager for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountManager($parameters = [])
@@ -59,8 +57,8 @@ class Affiliate extends Base
     /**
      * Returns a Payoneer signup URL for the calling with optional post-signup redirect URL.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getPayoneerSignupUrl($parameters = [])
@@ -71,8 +69,8 @@ class Affiliate extends Base
     /**
      * Returns the referral commission rate details for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getReferralCommission($parameters = [])
@@ -83,8 +81,8 @@ class Affiliate extends Base
     /**
      * Update the Affiliate details for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -95,8 +93,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'Check' for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodCheck($parameters = [])
@@ -107,8 +105,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'Direct Deposit' for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodDirectDeposit($parameters = [])
@@ -119,8 +117,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'Other' for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodOther($parameters = [])
@@ -131,8 +129,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'Paypal' for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodPaypal($parameters = [])
@@ -143,8 +141,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'PayQuicker' for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodPayQuicker($parameters = [])
@@ -155,8 +153,8 @@ class Affiliate extends Base
     /**
      * Update Payment method 'Wire' for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updatePaymentMethodWire($parameters = [])

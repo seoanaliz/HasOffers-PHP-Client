@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class RingRevenue extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'RingRevenue';
     /**
      * Returns an Affiliate login url for an Offer that utilizes RingRevenue.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createAffiliateLoginUrl($parameters = [])

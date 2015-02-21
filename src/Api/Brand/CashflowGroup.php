@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class CashflowGroup extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'CashflowGroup';
     /**
      * Create an Cashflow Group along with constituent Cashflow Rules and Cashflow Affiliates.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createCashflowGroup($parameters = [])
@@ -33,10 +31,10 @@ class CashflowGroup extends Base
     }
 
     /**
-     * Find a Cashflow Group by its ID
+     * Find a Cashflow Group by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findCashflowGroupById($parameters = [])
@@ -47,8 +45,8 @@ class CashflowGroup extends Base
     /**
      * Find Cashflow Groups.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findCashflowGroups($parameters = [])
@@ -61,8 +59,8 @@ class CashflowGroup extends Base
      * payout or revenue calculation, or which have at least one
      * active offer that uses the cashflow group.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findCashflowGroupUsage($parameters = [])
@@ -73,8 +71,8 @@ class CashflowGroup extends Base
     /**
      * Returns the details for Cashflow Rule fields, including acceptable values and types.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCashflowRuleFieldDefinitions($parameters = [])
@@ -85,8 +83,8 @@ class CashflowGroup extends Base
     /**
      * Returns all the Payout Groups for a Goal.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getGoalPayoutGroupsForGoal($parameters = [])
@@ -97,8 +95,8 @@ class CashflowGroup extends Base
     /**
      * Returns all the Revenue Groups for a Goal.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getGoalRevenueGroupsForGoal($parameters = [])
@@ -109,8 +107,8 @@ class CashflowGroup extends Base
     /**
      * Returns all the Payout Groups for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferPayoutGroupsForOffer($parameters = [])
@@ -121,8 +119,8 @@ class CashflowGroup extends Base
     /**
      * Returns all the Revenue Groups for an Offer.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOfferRevenueGroupsForOffer($parameters = [])
@@ -135,8 +133,8 @@ class CashflowGroup extends Base
      * groups that were set for the goal, updating any existing ones which
      * are passed with an id, and creating new ones that lack an id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function replaceGoalPayoutGroupsForGoal($parameters = [])
@@ -149,8 +147,8 @@ class CashflowGroup extends Base
      * groups that were set for the goal, updating any existing ones which
      * are passed with an id, and creating new ones that lack an id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function replaceGoalRevenueGroupsForGoal($parameters = [])
@@ -163,8 +161,8 @@ class CashflowGroup extends Base
      * groups that were set for the offer, updating any existing ones which
      * are passed with an id, and creating new ones that lack an id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function replaceOfferPayoutGroupsForOffer($parameters = [])
@@ -177,8 +175,8 @@ class CashflowGroup extends Base
      * groups that were set for the offer, updating any existing ones which
      * are passed with an id, and creating new ones that lack an id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function replaceOfferRevenueGroupsForOffer($parameters = [])
@@ -189,8 +187,8 @@ class CashflowGroup extends Base
     /**
      * Update a Cashflow Group along with its constituent Affiliates and Rules.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateCashflowGroup($parameters = [])

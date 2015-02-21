@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Offer extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Offer';
     /**
      * Accept the terms and conditions for an Offer that requires terms & conditions acceptance.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function acceptOfferTermsAndConditions($parameters = [])
@@ -35,8 +33,8 @@ class Offer extends Base
     /**
      * Find Offers.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -47,8 +45,8 @@ class Offer extends Base
     /**
      * Find all featured Offer IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllFeaturedOfferIds($parameters = [])
@@ -59,8 +57,8 @@ class Offer extends Base
     /**
      * Get all Offers with Offer Files of the specified type.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findByCreativeType($parameters = [])
@@ -71,8 +69,8 @@ class Offer extends Base
     /**
      * Retrieve an Offer by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -82,10 +80,10 @@ class Offer extends Base
 
     /**
      * Get all offers that are either private and the affiliate is approved
-     * for and all offers that the affiliate has stats for in the last 7 days
+     * for and all offers that the affiliate has stats for in the last 7 days.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findMyOffers($parameters = [])
@@ -96,8 +94,8 @@ class Offer extends Base
     /**
      * Generates an Offer Tracking Link for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function generateTrackingLink($parameters = [])
@@ -108,8 +106,8 @@ class Offer extends Base
     /**
      * Return an array of approval signup questions for the specified offer id.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getApprovalQuestions($parameters = [])
@@ -120,8 +118,8 @@ class Offer extends Base
     /**
      * Get Offer Categories by Offer IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCategories($parameters = [])
@@ -132,8 +130,8 @@ class Offer extends Base
     /**
      * Returns the payout details for the specified offer and, if enabled, its goals.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getPayoutDetails($parameters = [])
@@ -144,8 +142,8 @@ class Offer extends Base
     /**
      * Get Offer Pixel by Offer ID and Offer Pixel status.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getPixels($parameters = [])
@@ -156,8 +154,8 @@ class Offer extends Base
     /**
      * Get Offer Countries for the provided Offer IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getTargetCountries($parameters = [])
@@ -168,8 +166,8 @@ class Offer extends Base
     /**
      * Get Thumbnails by Offer IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getThumbnail($parameters = [])
@@ -180,8 +178,8 @@ class Offer extends Base
     /**
      * This function allows an Affiliate to request access to an Offer that requires approval.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function requestOfferAccess($parameters = [])

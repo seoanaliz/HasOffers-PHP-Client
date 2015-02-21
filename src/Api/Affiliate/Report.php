@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Report extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Report';
     /**
      * Get Affiliate Commission Report for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliateCommissions($parameters = [])
@@ -35,8 +33,8 @@ class Report extends Base
     /**
      * Returns a list of all active Affiliates referred by the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAffiliateReferrals($parameters = [])
@@ -47,8 +45,8 @@ class Report extends Base
     /**
      * Get Conversions Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getConversions($parameters = [])
@@ -59,8 +57,8 @@ class Report extends Base
     /**
      * Get Stats Report.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getStats($parameters = [])

@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Conversion extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Conversion';
     /**
      * Creates a Conversion with data properties.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -35,8 +33,8 @@ class Conversion extends Base
     /**
      * Find Conversions which were manually added within a specific date range.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAddedConversions($parameters = [])
@@ -47,8 +45,8 @@ class Conversion extends Base
     /**
      * Find Conversions.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -59,8 +57,8 @@ class Conversion extends Base
     /**
      * Find a list of Conversions by their Conversion IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByIds($parameters = [])
@@ -71,8 +69,8 @@ class Conversion extends Base
     /**
      * Find a Conversion by the Conversion ID or by Transaction (Ad) ID. Only one identifier should be passed.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -83,8 +81,8 @@ class Conversion extends Base
     /**
      * Find Conversions which were manually updated within a specific date range.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findUpdatedConversions($parameters = [])
@@ -95,8 +93,8 @@ class Conversion extends Base
     /**
      * Update a Conversion identified by Conversion ID or Transaction ID (Ad ID).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -107,8 +105,8 @@ class Conversion extends Base
     /**
      * Updates a field of a Conversion.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])
@@ -119,8 +117,8 @@ class Conversion extends Base
     /**
      * Update the meta data for a Conversion.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateMeta($parameters = [])
@@ -131,8 +129,8 @@ class Conversion extends Base
     /**
      * Update the status of a Conversion.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateStatus($parameters = [])

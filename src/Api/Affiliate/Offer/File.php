@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class File extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'OfferFile';
     /**
      * Creates an OfferFile for the calling Affiliate for a specified Offer.
      *
-     * @access public
-     * @param  object $parameters
+     * @param object $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -35,8 +33,8 @@ class File extends Base
     /**
      * Find Offer Files.
      *
-     * @access public
-     * @param  object $parameters
+     * @param object $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -47,8 +45,8 @@ class File extends Base
     /**
      * Find Offer File by ID.
      *
-     * @access public
-     * @param  object $parameters
+     * @param object $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -59,8 +57,8 @@ class File extends Base
     /**
      * Get Offer File Creative Code with tracking_url, impression_pixel, offer_id, source and aff_sub1-5 by Offer File ID.
      *
-     * @access public
-     * @param  object $parameters
+     * @param object $parameters
+     *
      * @return object
      */
     public function getCreativeCode($parameters = [])

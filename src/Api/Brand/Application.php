@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Application extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Application';
     /**
      * Create an Affiliate Tier.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addAffiliateTier($parameters = [])
@@ -35,8 +33,8 @@ class Application extends Base
     /**
      * Create jump hostname (tracking domain) with data properties.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addHostname($parameters = [])
@@ -47,8 +45,8 @@ class Application extends Base
     /**
      * Create Offer Category with data properties.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addOfferCategory($parameters = [])
@@ -59,8 +57,8 @@ class Application extends Base
     /**
      * Create Offer Group with data properties.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addOfferGroup($parameters = [])
@@ -71,8 +69,8 @@ class Application extends Base
     /**
      * Update an Advertiser Api V1 Key. This will generate a new random key for the Advertiser.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function changeAdvertiserApiKey($parameters = [])
@@ -83,8 +81,8 @@ class Application extends Base
     /**
      * Change Affiliate Api V1 Key. This will generate a new random key for the affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function changeAffiliateApiKey($parameters = [])
@@ -95,8 +93,8 @@ class Application extends Base
     /**
      * Generates and returns a new Network Api Key (Network Token).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function changeNetworkApiKey($parameters = [])
@@ -107,8 +105,8 @@ class Application extends Base
     /**
      * Create Advertiser Api V1 Key with data properties.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createAdvertiserApiKey($parameters = [])
@@ -119,8 +117,8 @@ class Application extends Base
     /**
      * Create an Affiliate Api V1 Key.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createAffiliateApiKey($parameters = [])
@@ -131,8 +129,8 @@ class Application extends Base
     /**
      * Decrypt unsubscribe hash.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function decryptUnsubHash($parameters = [])
@@ -143,8 +141,8 @@ class Application extends Base
     /**
      * Find Advertiser Api V1 Key.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAdvertiserApiKey($parameters = [])
@@ -155,8 +153,8 @@ class Application extends Base
     /**
      * Find Advertiser Api V1 Key by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAdvertiserApiKeyByAdvertiserId($parameters = [])
@@ -167,8 +165,8 @@ class Application extends Base
     /**
      * Find Affiliate Api V1 Key by Affiliate Api Key.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAffiliateApiKey($parameters = [])
@@ -179,8 +177,8 @@ class Application extends Base
     /**
      * Find Affiliate Api V1 Key by Affiliate ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAffiliateApiKeyByAffiliateId($parameters = [])
@@ -191,8 +189,8 @@ class Application extends Base
     /**
      * Find all Advertiser Api V1 Keys by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllAdvertiserApiKeys($parameters = [])
@@ -203,8 +201,8 @@ class Application extends Base
     /**
      * Find all Affiliate API V1 keys.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllAffiliateApiKeys($parameters = [])
@@ -215,8 +213,8 @@ class Application extends Base
     /**
      * Find the IDs of Affiliates in an Affiliate Tier.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllAffiliateTierAffiliateIds($parameters = [])
@@ -227,8 +225,8 @@ class Application extends Base
     /**
      * Find Affiliate Tiers.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllAffiliateTiers($parameters = [])
@@ -239,8 +237,8 @@ class Application extends Base
     /**
      * Find all Browsers.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllBrowsers($parameters = [])
@@ -251,8 +249,8 @@ class Application extends Base
     /**
      * Find all Countries.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllCountries($parameters = [])
@@ -263,8 +261,8 @@ class Application extends Base
     /**
      * Find jump hostnames (tracking domains) specified for the Network.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllHostnames($parameters = [])
@@ -275,8 +273,8 @@ class Application extends Base
     /**
      * Find Offer Categories.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllOfferCategories($parameters = [])
@@ -287,8 +285,8 @@ class Application extends Base
     /**
      * Find all Offer IDs in a specific Offer Category.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllOfferCategoryOfferIds($parameters = [])
@@ -299,8 +297,8 @@ class Application extends Base
     /**
      * Find all Offer IDs by Offer Group ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllOfferGroupOfferIds($parameters = [])
@@ -311,8 +309,8 @@ class Application extends Base
     /**
      * Find all Offer Groups by filter.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllOfferGroups($parameters = [])
@@ -323,8 +321,8 @@ class Application extends Base
     /**
      * Get a list of all defined permissions.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllPermissions($parameters = [])
@@ -335,8 +333,8 @@ class Application extends Base
     /**
      * Find all Regions.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllRegions($parameters = [])
@@ -347,8 +345,8 @@ class Application extends Base
     /**
      * Find all Timezones.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllTimezones($parameters = [])
@@ -359,8 +357,8 @@ class Application extends Base
     /**
      * Find Browser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findBrowserById($parameters = [])
@@ -371,8 +369,8 @@ class Application extends Base
     /**
      * Find Country by Country code.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findCountryByCode($parameters = [])
@@ -383,8 +381,8 @@ class Application extends Base
     /**
      * Find permission by ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findPermissionById($parameters = [])
@@ -395,8 +393,8 @@ class Application extends Base
     /**
      * Find permission by name.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findPermissionByName($parameters = [])
@@ -407,8 +405,8 @@ class Application extends Base
     /**
      * Find all permissions defined in a permission group.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findPermissionsByGroup($parameters = [])
@@ -419,8 +417,8 @@ class Application extends Base
     /**
      * Find Timezone by ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findTimezoneById($parameters = [])
@@ -431,8 +429,8 @@ class Application extends Base
     /**
      * Find user login details.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findUserAuthIps($parameters = [])
@@ -443,8 +441,8 @@ class Application extends Base
     /**
      * Generate unsubscribe links by users.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function generateAllUnsubLinks($parameters = [])
@@ -455,8 +453,8 @@ class Application extends Base
     /**
      * Generates a Mail Room unsubscribe link for the specified mailing list and user.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function generateUnsubLink($parameters = [])
@@ -467,8 +465,8 @@ class Application extends Base
     /**
      * Get account information for network ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountInformation($parameters = [])
@@ -479,8 +477,8 @@ class Application extends Base
     /**
      * Get active Offer Category count.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getActiveOfferCategoryCount($parameters = [])
@@ -491,8 +489,8 @@ class Application extends Base
     /**
      * Get Brand details.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getBrand($parameters = [])
@@ -503,8 +501,8 @@ class Application extends Base
     /**
      * Get Brand information by Brand ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getBrandInformation($parameters = [])
@@ -515,8 +513,8 @@ class Application extends Base
     /**
      * Get Country Region by Country code.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCountryRegions($parameters = [])
@@ -527,8 +525,8 @@ class Application extends Base
     /**
      * Retrieve a previously uploaded PO file.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getPoFile($parameters = [])
@@ -539,8 +537,8 @@ class Application extends Base
     /**
      * Get the Network's timezone, whose id is stored in the \"timezone_id\" brand preference.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getTimezone($parameters = [])
@@ -551,8 +549,8 @@ class Application extends Base
     /**
      * Import Advertisers from CSV.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function importAdvertisers($parameters = [])
@@ -563,8 +561,8 @@ class Application extends Base
     /**
      * Import Offers from CSV.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function importOffers($parameters = [])
@@ -575,8 +573,8 @@ class Application extends Base
     /**
      * Resets a user's password to a random new one.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function resetPassword($parameters = [])
@@ -587,8 +585,8 @@ class Application extends Base
     /**
      * Updates network account information.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateAccountInformation($parameters = [])
@@ -599,8 +597,8 @@ class Application extends Base
     /**
      * Update Advertiser Api V1 Key.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateAdvertiserApiKey($parameters = [])
@@ -611,8 +609,8 @@ class Application extends Base
     /**
      * Update Affiliate Api Key.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateAffiliateApiKey($parameters = [])
@@ -623,8 +621,8 @@ class Application extends Base
     /**
      * Update Affiliate Tier with data properties by Affiliate Tier ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateAffiliateTier($parameters = [])
@@ -635,8 +633,8 @@ class Application extends Base
     /**
      * Update Brand email.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateBrandEmail($parameters = [])
@@ -647,8 +645,8 @@ class Application extends Base
     /**
      * Update Brand hostname.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateBrandHostname($parameters = [])
@@ -659,8 +657,8 @@ class Application extends Base
     /**
      * Update Brand jump hostname (main tracking domain) by network ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateBrandJumpHostname($parameters = [])
@@ -671,8 +669,8 @@ class Application extends Base
     /**
      * Update whether or not the Brand jump hostname (main tracking domain) has SSL.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateBrandJumpHostnameHasSsl($parameters = [])
@@ -683,8 +681,8 @@ class Application extends Base
     /**
      * Update Brand network name by network ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateBrandNetworkName($parameters = [])
@@ -695,8 +693,8 @@ class Application extends Base
     /**
      * Update jump hostname (tracking domain) by Hostname ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateHostname($parameters = [])
@@ -707,8 +705,8 @@ class Application extends Base
     /**
      * Update Offer Category with data properties by Offer Category ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateOfferCategory($parameters = [])
@@ -719,8 +717,8 @@ class Application extends Base
     /**
      * Update Offer Group with data properties by Offer Group ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateOfferGroup($parameters = [])
@@ -731,8 +729,8 @@ class Application extends Base
     /**
      * Upload a PO file for a specific language.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function uploadPoFile($parameters = [])
@@ -743,8 +741,8 @@ class Application extends Base
     /**
      * Check if an Advertiser Api V1 Key is valid.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function validAdvertiserApiKey($parameters = [])
@@ -755,8 +753,8 @@ class Application extends Base
     /**
      * Check if Affiliate Api V1 Key is valid.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function validAffiliateApiKey($parameters = [])
@@ -767,8 +765,8 @@ class Application extends Base
     /**
      * Whitelist an IP address so that can be used to make API requests with the Network Api Key (Network Token).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function whitelistNetworkApiIp($parameters = [])

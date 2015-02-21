@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class User extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'AffiliateUser';
     /**
      * Create an Affiliate User.
      *
-     * @access public
-     * @param  object $parameters
+     * @param object $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -35,8 +33,8 @@ class User extends Base
     /**
      * Find Affiliate Users.
      *
-     * @access public
-     * @param  object $parameters
+     * @param object $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -47,8 +45,8 @@ class User extends Base
     /**
      * Find an Affiliate User by ID.
      *
-     * @access public
-     * @param  object $parameters
+     * @param object $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -60,10 +58,10 @@ class User extends Base
      * Returns a variety of details about an Affiliate User,
      * including their details, their Affiliate details,
      * Account Manager details (if enabled), relevant Brand Preferences,
-     * and their enabled Features
+     * and their enabled Features.
      *
-     * @access public
-     * @param  object $parameters
+     * @param object $parameters
+     *
      * @return object
      */
     public function getContext($parameters = [])
@@ -74,8 +72,8 @@ class User extends Base
     /**
      * Sets an Affiliate User's permissions.
      *
-     * @access public
-     * @param  object $parameters
+     * @param object $parameters
+     *
      * @return object
      */
     public function setPermissions($parameters = [])
@@ -86,8 +84,8 @@ class User extends Base
     /**
      * Update an Affiliate User.
      *
-     * @access public
-     * @param  object $parameters
+     * @param object $parameters
+     *
      * @return object
      */
     public function update($parameters = [])

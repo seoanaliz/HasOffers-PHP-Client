@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Advertiser extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Advertiser';
     /**
      * Add Advertiser account note by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function addAccountNote($parameters = [])
@@ -35,8 +33,8 @@ class Advertiser extends Base
     /**
      * Block Advertiser account by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function block($parameters = [])
@@ -47,8 +45,8 @@ class Advertiser extends Base
     /**
      * Block an Affiliate from an Advertiser's Offers.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function blockAffiliate($parameters = [])
@@ -59,8 +57,8 @@ class Advertiser extends Base
     /**
      * Create Advertiser account.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -71,8 +69,8 @@ class Advertiser extends Base
     /**
      * Create advertiser signup question.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createSignupQuestion($parameters = [])
@@ -83,8 +81,8 @@ class Advertiser extends Base
     /**
      * Create signup question answer by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function createSignupQuestionAnswer($parameters = [])
@@ -95,8 +93,8 @@ class Advertiser extends Base
     /**
      * Find all advertiser objects by filters.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -107,8 +105,8 @@ class Advertiser extends Base
     /**
      * Find all Advertiser objects by list Advertiser IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByIds($parameters = [])
@@ -119,8 +117,8 @@ class Advertiser extends Base
     /**
      * Find all Advertiser IDs based on what the requester has access to.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIds($parameters = [])
@@ -131,8 +129,8 @@ class Advertiser extends Base
     /**
      * Find all Advertisers IDs with given account manager (employee).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIdsByAccountManagerId($parameters = [])
@@ -143,8 +141,8 @@ class Advertiser extends Base
     /**
      * Find all pending and unassigned Advertisers by account manager (employee) ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllPendingUnassignedAdvertiserIds($parameters = [])
@@ -155,8 +153,8 @@ class Advertiser extends Base
     /**
      * Find all Advertisers with a status of "pending" who are managed by the specified Account Manager (Employee).
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllPendingUnassignedAdvertisers($parameters = [])
@@ -167,8 +165,8 @@ class Advertiser extends Base
     /**
      * Find Advertiser object by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -179,8 +177,8 @@ class Advertiser extends Base
     /**
      * Get Advertiser account balance.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountBalance($parameters = [])
@@ -191,8 +189,8 @@ class Advertiser extends Base
     /**
      * Get account manager by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountManager($parameters = [])
@@ -203,8 +201,8 @@ class Advertiser extends Base
     /**
      * Get Advertiser account notes by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountNotes($parameters = [])
@@ -215,8 +213,8 @@ class Advertiser extends Base
     /**
      * Get Affiliate IDs blocked from using Advertiser's Offers.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getBlockedAffiliateIds($parameters = [])
@@ -227,8 +225,8 @@ class Advertiser extends Base
     /**
      * Get reasons why Advertiser is blocked.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getBlockedReasons($parameters = [])
@@ -239,8 +237,8 @@ class Advertiser extends Base
     /**
      * Get creator Advertiser User for the specified Advertiser account.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCreatorUser($parameters = [])
@@ -252,8 +250,8 @@ class Advertiser extends Base
      * Get overview of active and pending Advertiser accounts by
      * Advertiser IDs, account manager (employee) ID, and filters. This is used on the snapshot pages.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOverview($parameters = [])
@@ -264,8 +262,8 @@ class Advertiser extends Base
     /**
      * Get the first Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getOwnersAdvertiserAccountId($parameters = [])
@@ -276,8 +274,8 @@ class Advertiser extends Base
     /**
      * Get signup answers by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getSignupAnswers($parameters = [])
@@ -288,8 +286,8 @@ class Advertiser extends Base
     /**
      * Get Advertiser Signup Questions.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getSignupQuestions($parameters = [])
@@ -300,8 +298,8 @@ class Advertiser extends Base
     /**
      * Get Affiliate IDs that can use a specified Advertiser's Offers.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getUnblockedAffiliateIds($parameters = [])
@@ -312,8 +310,8 @@ class Advertiser extends Base
     /**
      * Advertiser signup from login page.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function signup($parameters = [])
@@ -324,8 +322,8 @@ class Advertiser extends Base
     /**
      * Unblock an Affiliate from accessing an Advertiser's Offers.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function unblockAffiliate($parameters = [])
@@ -336,8 +334,8 @@ class Advertiser extends Base
     /**
      * Update all Advertiser fields passed into data by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -348,8 +346,8 @@ class Advertiser extends Base
     /**
      * Update Advertiser account note by AccountNote ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateAccountNote($parameters = [])
@@ -360,8 +358,8 @@ class Advertiser extends Base
     /**
      * Update Advertiser field by Advertiser ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])
@@ -372,8 +370,8 @@ class Advertiser extends Base
     /**
      * Update an Advertiser Signup Question.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateSignupQuestion($parameters = [])
@@ -384,8 +382,8 @@ class Advertiser extends Base
     /**
      * Update signup question answer by SignupAnswer ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateSignupQuestionAnswer($parameters = [])

@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Billing extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Affiliate';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'AffiliateBilling';
     /**
      * Find Affiliate Invoices for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllInvoices($parameters = [])
@@ -35,8 +33,8 @@ class Billing extends Base
     /**
      * Find Affiliate Receipts for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllReceipts($parameters = [])
@@ -47,8 +45,8 @@ class Billing extends Base
     /**
      * Find an Affiliate Invoice by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findInvoiceById($parameters = [])
@@ -59,8 +57,8 @@ class Billing extends Base
     /**
      * Finds an Affiliate Receipt by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findReceiptById($parameters = [])
@@ -71,8 +69,8 @@ class Billing extends Base
     /**
      * Retrieves the Account Balance for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getAccountBalance($parameters = [])
@@ -83,8 +81,8 @@ class Billing extends Base
     /**
      * Get payout totals for the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getPayoutTotals($parameters = [])
@@ -95,8 +93,8 @@ class Billing extends Base
     /**
      * Updates the tax id of the calling Affiliate.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateTaxId($parameters = [])

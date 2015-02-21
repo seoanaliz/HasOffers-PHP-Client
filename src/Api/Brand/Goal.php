@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Goal extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Goal';
     /**
      * Create a Goal.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -35,8 +33,8 @@ class Goal extends Base
     /**
      * Find Goals.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -47,8 +45,8 @@ class Goal extends Base
     /**
      * Find one or more Goals by their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByIds($parameters = [])
@@ -59,8 +57,8 @@ class Goal extends Base
     /**
      * Find a Goal by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -71,8 +69,8 @@ class Goal extends Base
     /**
      * Generate a tracking link for a Goal.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function generateTracking($parameters = [])
@@ -83,8 +81,8 @@ class Goal extends Base
     /**
      * Get Affiliate-specific Payouts for a Goal.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getPayouts($parameters = [])
@@ -95,8 +93,8 @@ class Goal extends Base
     /**
      * Get Affiliate-specific Revenues for a Goal.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getRevenues($parameters = [])
@@ -107,8 +105,8 @@ class Goal extends Base
     /**
      * Returns the Affiliate Tier Payouts and their associated Affiliate Tier for the specified Goal ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getTierPayouts($parameters = [])
@@ -119,8 +117,8 @@ class Goal extends Base
     /**
      * Returns the Affiliate Tier Revenues and their associated Affiliate Tier for the specified Goal ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getTierRevenues($parameters = [])
@@ -131,8 +129,8 @@ class Goal extends Base
     /**
      * Update a Goal.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -143,8 +141,8 @@ class Goal extends Base
     /**
      * Update one field of a Goal.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])

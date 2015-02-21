@@ -6,92 +6,80 @@ use GuzzleHttp\Client as GuzzleClient;
 class Client
 {
     /**
-     * API Base URL - Brand
+     * API Base URL - Brand.
      *
-     * @access private
-     * @var string $apiUrlBrand
+     * @var string
      */
     private $apiUrlBrand = 'https://api.hasoffers.com/Apiv3/json?NetworkId=%s&Target=%s&Method=%s&NetworkToken=%s';
 
     /**
-     * API Base URL - Affiliate
+     * API Base URL - Affiliate.
      *
-     * @access private
-     * @var string $apiUrlAffiliate
+     * @var string
      */
     private $apiUrlAffiliate = 'https://api.hasoffers.com/Apiv3/json?NetworkId=%s&Target=%s_%s&Method=%s&api_key=%s';
 
     /**
-     * API Base URL - YeahMobi
+     * API Base URL - YeahMobi.
      *
-     * @access private
-     * @var string $apiUrlYeahMobi
+     * @var string
      */
     private $apiUrlYeahMobi = 'http://yeahmobi.hasoffers.com/%s.json?api_key=%s';
 
     /**
-     * API Base URL - FurtherMobi
+     * API Base URL - FurtherMobi.
      *
-     * @access private
-     * @var string $apiUrlFurtherMobi
+     * @var string
      */
     private $apiUrlFurtherMobi = 'http://aff.furthermobi.com/%s.json?api_key=%s';
 
     /**
-     * HTTP Headers
+     * HTTP Headers.
      *
-     * @access private
-     * @var array $headers
+     * @var array
      */
     private $headers = ['User-Agent' => 'DraperStudio-HasOffers/1.0.0'];
 
     /**
-     * HTTP Client
+     * HTTP Client.
      *
-     * @access private
-     * @var object $httpClient
+     * @var object
      */
     private $httpClient;
 
     /**
-     * API Key
+     * API Key.
      *
-     * @access private
-     * @var string $apiKey
+     * @var string
      */
     private $apiKey;
 
     /**
-     * Network ID
+     * Network ID.
      *
-     * @access private
-     * @var string $networkId
+     * @var string
      */
     private $networkId;
 
     /**
-     * API Type
+     * API Type.
      *
-     * @access private
-     * @var string $apiType
+     * @var string
      */
     private $apiType;
 
     /**
-     * API Namespace
+     * API Namespace.
      *
-     * @access private
-     * @var string $apiNamespace
+     * @var string
      */
     private $apiNamespace;
 
     /**
-     * Constructor
+     * Constructor.
      *
-     * @access public
-     * @param  string $apiKey
-     * @param  string $networkId
-     * @return void
+     * @param string $apiKey
+     * @param string $networkId
      */
     public function __construct($apiKey, $networkId = null)
     {
@@ -107,10 +95,10 @@ class Client
     }
 
     /**
-     * Initialize the given API class
+     * Initialize the given API class.
      *
-     * @access public
-     * @param  string $class
+     * @param string $class
+     *
      * @return object
      */
     public function api($class)
@@ -121,11 +109,11 @@ class Client
     }
 
     /**
-     * Send a GET request
+     * Send a GET request.
      *
-     * @access public
-     * @param  string $apiMethod
-     * @param  array  $parameters
+     * @param string $apiMethod
+     * @param array  $parameters
+     *
      * @return object
      */
     public function get($apiMethod, $parameters = [])
@@ -139,11 +127,11 @@ class Client
     }
 
     /**
-     * Build the request url
+     * Build the request url.
      *
-     * @access private
-     * @param  string $apiMethod
-     * @param  array  $parameter
+     * @param string $apiMethod
+     * @param array  $parameter
+     *
      * @return string
      */
     private function buildUrl($apiMethod, $parameters)
@@ -170,10 +158,10 @@ class Client
     }
 
     /**
-     * Handle the response
+     * Handle the response.
      *
-     * @access private
-     * @param  object $response
+     * @param object $response
+     *
      * @return object
      */
     private function handleResponse($response)
@@ -189,9 +177,8 @@ class Client
     }
 
     /**
-     * Get the Affiliate API Base URL
+     * Get the Affiliate API Base URL.
      *
-     * @access public
      * @return string
      */
     public function getApiUrlAffiliate()
@@ -200,11 +187,9 @@ class Client
     }
 
     /**
-     * Set the Affiliate API Base URL
+     * Set the Affiliate API Base URL.
      *
-     * @access public
-     * @param  string $apiUrlAffiliate
-     * @return void
+     * @param string $apiUrlAffiliate
      */
     public function setApiUrlAffiliate($apiUrlAffiliate)
     {
@@ -212,9 +197,8 @@ class Client
     }
 
     /**
-     * Get the Brand API Base URL
+     * Get the Brand API Base URL.
      *
-     * @access public
      * @return string
      */
     public function getApiUrlBrand()
@@ -223,11 +207,9 @@ class Client
     }
 
     /**
-     * Set the Brand API Base URL
+     * Set the Brand API Base URL.
      *
-     * @access public
-     * @param  string $apiUrlBrand
-     * @return void
+     * @param string $apiUrlBrand
      */
     public function setApiUrlBrand($apiUrlBrand)
     {
@@ -235,9 +217,8 @@ class Client
     }
 
     /**
-     * Get the YeahMobi API Base URL
+     * Get the YeahMobi API Base URL.
      *
-     * @access public
      * @return string
      */
     public function getApiUrlYeahMobi()
@@ -246,11 +227,9 @@ class Client
     }
 
     /**
-     * Set the YeahMobi API Base URL
+     * Set the YeahMobi API Base URL.
      *
-     * @access public
-     * @param  string $apiUrlYeahMobi
-     * @return void
+     * @param string $apiUrlYeahMobi
      */
     public function setApiUrlYeahMobi($apiUrlYeahMobi)
     {
@@ -258,9 +237,8 @@ class Client
     }
 
     /**
-     * Get the FurtherMobi API Base URL
+     * Get the FurtherMobi API Base URL.
      *
-     * @access public
      * @return string
      */
     public function getApiUrlFurtherMobi()
@@ -269,11 +247,9 @@ class Client
     }
 
     /**
-     * Set the FurtherMobi API Base URL
+     * Set the FurtherMobi API Base URL.
      *
-     * @access public
-     * @param  string $apiUrlFurtherMobi
-     * @return void
+     * @param string $apiUrlFurtherMobi
      */
     public function setApiUrlFurtherMobi($apiUrlFurtherMobi)
     {
@@ -281,9 +257,8 @@ class Client
     }
 
     /**
-     * Get the HTTP Headers
+     * Get the HTTP Headers.
      *
-     * @access public
      * @return array
      */
     public function getHeaders()
@@ -292,11 +267,9 @@ class Client
     }
 
     /**
-     * Set the HTTP Headers
+     * Set the HTTP Headers.
      *
-     * @access public
-     * @param  array $headers
-     * @return void
+     * @param array $headers
      */
     public function setHeaders($headers)
     {
@@ -304,9 +277,8 @@ class Client
     }
 
     /**
-     * Get the API Key
+     * Get the API Key.
      *
-     * @access public
      * @return string
      */
     public function getApiKey()
@@ -315,11 +287,9 @@ class Client
     }
 
     /**
-     * Set the API Key
+     * Set the API Key.
      *
-     * @access public
-     * @param  string $apiKey
-     * @return void
+     * @param string $apiKey
      */
     public function setApiKey($apiKey)
     {
@@ -327,9 +297,8 @@ class Client
     }
 
     /**
-     * Get the Network ID
+     * Get the Network ID.
      *
-     * @access public
      * @return string
      */
     public function getNetworkId()
@@ -338,11 +307,9 @@ class Client
     }
 
     /**
-     * Set the Network ID
+     * Set the Network ID.
      *
-     * @access public
-     * @param  string $networkId
-     * @return void
+     * @param string $networkId
      */
     public function setNetworkId($networkId)
     {
@@ -350,9 +317,8 @@ class Client
     }
 
     /**
-     * Get the API Type
+     * Get the API Type.
      *
-     * @access public
      * @return string
      */
     public function getApiType()
@@ -361,11 +327,9 @@ class Client
     }
 
     /**
-     * Set the API Type
+     * Set the API Type.
      *
-     * @access public
-     * @param  string $apiType
-     * @return void
+     * @param string $apiType
      */
     public function setApiType($apiType)
     {
@@ -373,9 +337,8 @@ class Client
     }
 
     /**
-     * Get the API Namespace
+     * Get the API Namespace.
      *
-     * @access public
      * @return string
      */
     public function getApiNamespace()
@@ -384,11 +347,9 @@ class Client
     }
 
     /**
-     * Set the API Namespace
+     * Set the API Namespace.
      *
-     * @access public
-     * @param  string $apiNamespace
-     * @return void
+     * @param string $apiNamespace
      */
     public function setApiNamespace($apiNamespace)
     {
@@ -396,9 +357,8 @@ class Client
     }
 
     /**
-     * Get the HTTP Client
+     * Get the HTTP Client.
      *
-     * @access public
      * @return object
      */
     public function getHttpClient()
@@ -407,11 +367,9 @@ class Client
     }
 
     /**
-     * Set the HTTP Client
+     * Set the HTTP Client.
      *
-     * @access public
-     * @param  object $httpClient
-     * @return void
+     * @param object $httpClient
      */
     public function setHttpClient($httpClient)
     {

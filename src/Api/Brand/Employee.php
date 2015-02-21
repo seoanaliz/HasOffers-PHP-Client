@@ -6,25 +6,23 @@ use DraperStudio\HasOffers\Base;
 class Employee extends Base
 {
     /**
-     * API Endpoint Type
+     * API Endpoint Type.
      *
-     * @access protected
-     * @var string $endpointType
+     * @var string
      */
     protected $endpointType = 'Brand';
 
     /**
-     * API Endpoint Name
+     * API Endpoint Name.
      *
-     * @access protected
-     * @var string $endpointName
+     * @var string
      */
     protected $endpointName = 'Employee';
     /**
      * Check if a password matches that of an Employee account.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function checkPassword($parameters = [])
@@ -35,8 +33,8 @@ class Employee extends Base
     /**
      * Create an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function create($parameters = [])
@@ -47,8 +45,8 @@ class Employee extends Base
     /**
      * Find Employees.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAll($parameters = [])
@@ -59,8 +57,8 @@ class Employee extends Base
     /**
      * Find all Employees who have the Brand.advertiser_management permission.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllAdvertiserManagers($parameters = [])
@@ -71,8 +69,8 @@ class Employee extends Base
     /**
      * Find all Employees who have the Brand.affiliate_management permission.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllAffiliateManagers($parameters = [])
@@ -83,8 +81,8 @@ class Employee extends Base
     /**
      * Find one or more Employees by their IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByIds($parameters = [])
@@ -95,8 +93,8 @@ class Employee extends Base
     /**
      * Find all Employees who have a named Permission.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllByPermission($parameters = [])
@@ -107,8 +105,8 @@ class Employee extends Base
     /**
      * Find all Employee IDs.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIds($parameters = [])
@@ -119,8 +117,8 @@ class Employee extends Base
     /**
      * Find all Employee IDs who have a named Permission.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findAllIdsByPermission($parameters = [])
@@ -131,8 +129,8 @@ class Employee extends Base
     /**
      * Find Brand owner (Employee) information.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findBrandOwnerInformation($parameters = [])
@@ -143,8 +141,8 @@ class Employee extends Base
     /**
      * Find an Employee by its ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function findById($parameters = [])
@@ -155,8 +153,8 @@ class Employee extends Base
     /**
      * Get Employee Commission for referrals by Employee ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getCommission($parameters = [])
@@ -167,8 +165,8 @@ class Employee extends Base
     /**
      * Get the latest HasOffers informational message for an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function getHOMessage($parameters = [])
@@ -179,8 +177,8 @@ class Employee extends Base
     /**
      * Grant a permission to an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function grantAccess($parameters = [])
@@ -191,8 +189,8 @@ class Employee extends Base
     /**
      * Remove Employee's access to permission by Employee ID.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeAccess($parameters = [])
@@ -203,8 +201,8 @@ class Employee extends Base
     /**
      * Removes the custom Employee Commission amount/rate for an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function removeCustomCommission($parameters = [])
@@ -215,8 +213,8 @@ class Employee extends Base
     /**
      * Resets an Employee password to a new, randomly generated password.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function resetPassword($parameters = [])
@@ -227,8 +225,8 @@ class Employee extends Base
     /**
      * Set a custom commission amount/rate for an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function setCustomCommission($parameters = [])
@@ -239,8 +237,8 @@ class Employee extends Base
     /**
      * Checks if any Employees in the Network have a specific email address.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function uniqueEmail($parameters = [])
@@ -251,8 +249,8 @@ class Employee extends Base
     /**
      * Update an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function update($parameters = [])
@@ -263,8 +261,8 @@ class Employee extends Base
     /**
      * Update one field of an Employee.
      *
-     * @access public
-     * @param  array  $parameters
+     * @param array $parameters
+     *
      * @return object
      */
     public function updateField($parameters = [])
